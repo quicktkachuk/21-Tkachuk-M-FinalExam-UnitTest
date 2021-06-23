@@ -14,7 +14,7 @@ public class StringCalculator {
                 System.out.println("Negatives not Allowed");
                 throw new IllegalArgumentException();
             }
-            if (!number.trim().isEmpty())
+            if (!number.trim().isEmpty() && Integer.parseInt(number.trim()) < 1000)
             {
                 returnValue += Integer.parseInt(number.trim());
             }
